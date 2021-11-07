@@ -11,8 +11,8 @@ scala object不可以传参，如果传了，说明在对应的object中写了ap
  */
 
 class Person(xname:String, xage:Int){
-  val name = xname //前面加private会变成私有 private val name = xname
-  val age = xage
+  val name: String = xname //前面加private会变成私有 private val name = xname
+  val age: Int = xage
   var gender = 'M'
 
   //重写构造

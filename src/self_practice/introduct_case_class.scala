@@ -23,7 +23,7 @@ object CASE{
     }
 
     val someSms: SMS = SMS("12345", "Are you there?")
-    val someVoiceRecording = VoiceRecording("Tom", "voicerecording.org/id/123")
+    val someVoiceRecording: VoiceRecording = VoiceRecording("Tom", "voicerecording.org/id/123")
 
     println(showNotification(someSms))  // prints You got an SMS from 12345! Message: Are you there?
     println(showNotification(someVoiceRecording))  // you received a Voice Recording from Tom! Click the link to hear it: voicerecording.org/id/123
